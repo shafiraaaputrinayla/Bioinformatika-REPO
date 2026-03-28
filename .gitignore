@@ -1,0 +1,13 @@
+gitignore_text = """__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+"""
+
+with open(".gitignore", "w", encoding="utf-8") as f:
+    f.write(gitignore_text)
+
+print("Isi .gitignore:")
+!cat .gitignore
